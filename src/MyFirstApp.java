@@ -31,8 +31,8 @@ public class MyFirstApp extends Application {
 
     String email = "none";
     String password = "none";
-    String to = "vladimirnagornov831@gmail.com";
-    String from = "vladimirnagornov831@gmail.com";
+    String to = "";
+    String from = "";
     String host = "localhost";
 
 
