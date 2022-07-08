@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.lmail.NewMessageWindowController"
+            prefHeight="400.0" prefWidth="600.0">
+        <VBox alignment="TOP_LEFT" spacing="10.0" xmlns:fx="http://javafx.com/fxml">
+            <Label text="To:"/>
+            <TextField fx:id="Mail_Destination"/>
+
+            <Label text="Subject"/>
+            <TextField fx:id="Mail_Subject"/>
+            <Label text="Message"/>
+            <TextArea fx:id="Mail_Message" minHeight="200" minWidth="200" wrapText="true"
+                      promptText="Insert data in specified format." focusTraversable="false"
+                      GridPane.columnIndex="0"
+                      GridPane.rowIndex="2"
+                      GridPane.columnSpan="1"
+                      GridPane.halignment="CENTER"
+            />
+            <VBox alignment="TOP_CENTER">
+                <Button text="Send" onAction="#OnSendButtonPressed"/>
+            </VBox>
+        </VBox>
+
+</AnchorPane>
